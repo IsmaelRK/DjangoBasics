@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+</head>
+<body>
+    <h1>Resultado</h1>
+
+    {% if menor %}
+
+        <p>Delta < 0: {{ menor }}</p>>
+
+
+    {% elif value %}
+
+        <p>Delta = 0: X = {{ value }} </p>
+
+    {% elif values %}
+
+        <p>Delta > 0: X1 = {{values.0}}, X2 = {{values.1}}</p>
+
+    {% else %}
+
+        <p>Erro na operação: {{ error }}</p>
+
+    {% endif %}
+
+</body>
+</html>

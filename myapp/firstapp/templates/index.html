@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bhaskara Calculator</title>
+</head>
+<body>
+
+    <h1>Bhaskara Calculator</h1>
+
+    <form method="post" action="{% url 'pagina' %}">
+        {% csrf_token %}
+        <input type="number" placeholder="Value of A" name="a">
+        <input type="number" placeholder="Value of B" name="b">
+        <input type="number" placeholder="Value of C" name="c">
+
+        <br>
+        <input type="submit" value="send">
+    </form>
+
+
+</body>
+</html>
